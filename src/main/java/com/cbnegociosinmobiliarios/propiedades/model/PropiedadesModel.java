@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class PortafolioModel implements Serializable{
+public class PropiedadesModel implements Serializable{
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,10 +21,10 @@ public class PortafolioModel implements Serializable{
     private String urlpagina;
 
 
-    PortafolioModel(){}
+    PropiedadesModel(){}
 
 
-    public PortafolioModel(Long id, String titulo, String imagen, String urlgit, String urlpagina) {
+    public PropiedadesModel(Long id, String titulo, String imagen, String urlgit, String urlpagina) {
         this.id = id;
         this.titulo = titulo;
         this.imagen = imagen;
